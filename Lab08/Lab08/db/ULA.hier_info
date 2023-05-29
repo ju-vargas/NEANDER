@@ -1,0 +1,436 @@
+|ula16
+carryout <= ula_top:inst16.CARRYOUT
+COP => ula_top:inst16.OPC
+COP => ula_top:inst15.OPC
+COP => ula_top:inst14.OPC
+COP => ula_top:inst13.OPC
+COP => ula_top:inst12.OPC
+COP => ula_top:inst11.OPC
+COP => ula_top:inst10.OPC
+COP => ula_top:inst.OPC
+BOP => ula_top:inst16.OPB
+BOP => ula_top:inst15.OPB
+BOP => ula_top:inst14.OPB
+BOP => ula_top:inst13.OPB
+BOP => ula_top:inst12.OPB
+BOP => ula_top:inst11.OPB
+BOP => ula_top:inst10.OPB
+BOP => ula_top:inst.OPB
+AOP => ula_top:inst16.OPA
+AOP => ula_top:inst15.OPA
+AOP => ula_top:inst14.OPA
+AOP => ula_top:inst13.OPA
+AOP => ula_top:inst12.OPA
+AOP => ula_top:inst11.OPA
+AOP => ula_top:inst10.OPA
+AOP => ula_top:inst.OPA
+X[0] => ula_top:inst.DX
+X[1] => ula_top:inst10.DX
+X[2] => ula_top:inst11.DX
+X[3] => ula_top:inst12.DX
+X[4] => ula_top:inst13.DX
+X[5] => ula_top:inst14.DX
+X[6] => ula_top:inst15.DX
+X[7] => ula_top:inst16.DX
+Y[0] => ula_top:inst.EY
+Y[1] => ula_top:inst10.EY
+Y[2] => ula_top:inst11.EY
+Y[3] => ula_top:inst12.EY
+Y[4] => ula_top:inst13.EY
+Y[5] => ula_top:inst14.EY
+Y[6] => ula_top:inst15.EY
+Y[7] => ula_top:inst16.EY
+SAIDA[0] <= ula_top:inst.SAIDA
+SAIDA[1] <= ula_top:inst10.SAIDA
+SAIDA[2] <= ula_top:inst11.SAIDA
+SAIDA[3] <= ula_top:inst12.SAIDA
+SAIDA[4] <= ula_top:inst13.SAIDA
+SAIDA[5] <= ula_top:inst14.SAIDA
+SAIDA[6] <= ula_top:inst15.SAIDA
+SAIDA[7] <= ula_top:inst16.SAIDA
+
+
+|ula16|ula_top:inst16
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst16|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst16|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst15
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst15|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst15|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst14
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst14|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst14|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst13
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst13|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst13|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst12
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst12|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst12|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst11
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst11|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst11|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst10
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst10|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst10|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+
+|ula16|ula_top:inst
+SAIDA <= instgnd.DB_MAX_OUTPUT_PORT_TYPE
+OPA => inst2.IN0
+OPA => inst18.IN0
+OPB => inst3.IN0
+OPB => inst16.IN1
+OPB => inst17.IN1
+OPC => inst15.IN2
+OPC => inst4.IN0
+OPC => inst17.IN2
+DX => inst11.IN0
+DX => soma:inst22.DX
+DX => inst24.IN1
+DX => inst5.IN0
+DX => carry_top:instyy.DX
+EY => inst11.IN1
+EY => soma:inst22.EY
+EY => inst24.IN0
+EY => inst23.IN1
+EY => carry_top:instyy.EY
+Fcarryin => soma:inst22.Fcarryin
+Fcarryin => carry_top:instyy.Fcarryin
+CARRYOUT <= carry_top:instyy.carryout
+
+
+|ula16|ula_top:inst|soma:inst22
+SOMA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DX => inst4.IN0
+DX => inst3.IN0
+DX => inst55.IN0
+EY => inst5.IN0
+EY => inst3.IN1
+EY => inst2.IN1
+Fcarryin => inst1.IN2
+Fcarryin => inst3.IN2
+Fcarryin => inst6.IN0
+
+
+|ula16|ula_top:inst|carry_top:instyy
+carryout <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EY => inst2.IN0
+EY => inst3.IN1
+Fcarryin => inst2.IN1
+Fcarryin => inst1.IN1
+DX => inst3.IN0
+DX => inst1.IN0
+
+

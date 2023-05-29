@@ -1,0 +1,99 @@
+|name_top_2
+OUT[0] <= name_top:inst7.out
+OUT[1] <= name_top:inst1.out
+OUT[2] <= name_top:inst2.out
+OUT[3] <= name_top:inst4.out
+OUT[4] <= name_top:inst6.out
+OUT[5] <= name_top:inst5.out
+OUT[6] <= name_top:inst3.out
+OUT[7] <= name_top:inst.out
+A[0] => name_top:inst7.A
+A[1] => name_top:inst1.A
+A[2] => name_top:inst2.A
+A[3] => name_top:inst4.A
+A[4] => name_top:inst6.A
+A[5] => name_top:inst5.A
+A[6] => name_top:inst3.A
+A[7] => name_top:inst.A
+SELECT => name_top:inst7.Sel
+SELECT => name_top:inst1.Sel
+SELECT => name_top:inst2.Sel
+SELECT => name_top:inst4.Sel
+SELECT => name_top:inst6.Sel
+SELECT => name_top:inst5.Sel
+SELECT => name_top:inst3.Sel
+SELECT => name_top:inst.Sel
+B[0] => name_top:inst7.B
+B[1] => name_top:inst1.B
+B[2] => name_top:inst2.B
+B[3] => name_top:inst4.B
+B[4] => name_top:inst6.B
+B[5] => name_top:inst5.B
+B[6] => name_top:inst3.B
+B[7] => name_top:inst.B
+
+
+|name_top_2|name_top:inst7
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst1
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst6
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst5
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst3
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+
+|name_top_2|name_top:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sel => inst4.IN0
+Sel => inst1.IN1
+B => inst2.IN1
+A => inst1.IN0
+
+

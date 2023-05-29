@@ -1,0 +1,19 @@
+SAIDA = ((!A*!B*!C)*((!D*!E*F)+(!D*E*!F)+(D*E*F)+(D*!E*!F))) + ((!A*!B*C)*(D*E)) + ((!A*B*!C)*(D+E)) + ((!A*B*C)*(!D)) + ((A*!B*!C)*(E))
+            000                     SOMA                           001   X and Y       010    X ou Y      011    not X       100     Y
+
+
+SOMA = (!D*!E*F) + (!D*E*!F) + (D*E*F) + (D*!E*!F)
+
+Saida Minimizada: nao vale fazer
+
+
+
+CARRY OUT = (!D*E*F) + (D*!E*F) + (D*E*!F)+ (D*E*F)
+
+Carry Out Minimizado: (D*F) + (E*F) + (D*E)
+
+
+VARIAVEIS:
+X = D
+Y = E
+carry in = F

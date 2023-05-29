@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\lab04\simulation\qsim
+vname_top
+Z1 I5R^Kc0ZGFNbY7ARd]b9Uc3
+Z2 VTlWaa98MY9la]zb72_hl:2
+Z3 dC:\Users\aluno\Desktop\lab04\simulation\qsim
+Z4 w1670942033
+Z5 8lab04.vo
+Z6 Flab04.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 G998j3U[VZc9]ojI]YSzm0
+Z10 !s108 1670942036.895000
+Z11 !s107 lab04.vo|
+Z12 !s90 -work|work|lab04.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vname_top_2
+Z13 IUH[_modhB]1c^:U3G1XFj2
+Z14 VzVZCU:T0`zzA[6z[31[D:1
+R3
+Z15 w1670946637
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+!i10b 1
+Z16 !s100 =OX:T6U^N0<GeY`8nVE6E3
+!s85 0
+Z17 !s108 1670946638.276000
+R11
+!s101 -O0
+vname_top_2_vlg_check_tst
+!i10b 1
+!s100 z`zPM[TM]?g0e9jlUQa940
+IS4D9O_nENk^8Iz?nM^VJO1
+Z18 VH]fCM`B3`[2Pcl=ce1;U>2
+R3
+Z19 w1670946635
+Z20 8Waveform3.vwf.vt
+Z21 FWaveform3.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z22 !s108 1670946638.400000
+Z23 !s107 Waveform3.vwf.vt|
+Z24 !s90 -work|work|Waveform3.vwf.vt|
+!s101 -O0
+R8
+vname_top_2_vlg_sample_tst
+!i10b 1
+!s100 _XWIMa8>2Igea_U=fONjT2
+IhSUf;Ghg146kkgMP]7>L]3
+Z25 V7a?Q_GLzM1:<<eCO83;553
+R3
+R19
+R20
+R21
+L0 29
+R7
+r1
+!s85 0
+31
+R22
+R23
+R24
+!s101 -O0
+R8
+vname_top_2_vlg_vec_tst
+!i10b 1
+!s100 VCMIVolPTTIfhDkD:VS]j1
+I=?n@Iik?g9ABShfDYU_0z0
+Z26 V`zXZ7m4=IN8aZ4b>4i10X2
+R3
+R19
+R20
+R21
+Z27 L0 281
+R7
+r1
+!s85 0
+31
+R22
+R23
+R24
+!s101 -O0
+R8
+vname_top_vlg_check_tst
+Z28 IWR<F`2PIaR1500kOzHafi0
+Z29 V2ELNXbIlkf1B=laWODTd[1
+R3
+Z30 w1670942032
+Z31 8Waveform.vwf.vt
+Z32 FWaveform.vwf.vt
+L0 61
+R7
+r1
+31
+Z33 !s108 1670942037.176000
+Z34 !s107 Waveform.vwf.vt|
+Z35 !s90 -work|work|Waveform.vwf.vt|
+R8
+Z36 !s100 8=JfZaeazO20FcKOMNM9d1
+!i10b 1
+!s85 0
+!s101 -O0
+vname_top_vlg_sample_tst
+Z37 IVaBbeS2i`X@D>i8c24f>>1
+Z38 VJ;DkLZUllP43nT6]mCLWW3
+R3
+R30
+R31
+R32
+L0 29
+R7
+r1
+31
+R33
+R34
+R35
+R8
+Z39 !s100 ZU?JTiX9VmDE2=87blHQ:2
+!i10b 1
+!s85 0
+!s101 -O0
+vname_top_vlg_vec_tst
+Z40 I?V3Rf8UO;NaXV@N3dbh6M3
+Z41 V2ePU6k69K534_QAFPkePU1
+R3
+R30
+R31
+R32
+Z42 L0 156
+R7
+r1
+31
+R33
+R34
+R35
+R8
+Z43 !s100 _M^fYaA0QPEm;5eOIN]Xf0
+!i10b 1
+!s85 0
+!s101 -O0

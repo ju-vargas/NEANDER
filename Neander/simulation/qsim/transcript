@@ -1,0 +1,37 @@
+# do Neander.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module NeanderMain
+# 
+# Top level modules:
+# 	NeanderMain
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module NeanderMain_vlg_sample_tst
+# -- Compiling module NeanderMain_vlg_check_tst
+# -- Compiling module NeanderMain_vlg_vec_tst
+# 
+# Top level modules:
+# 	NeanderMain_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.NeanderMain_vlg_vec_tst 
+# Loading work.NeanderMain_vlg_vec_tst
+# Loading work.NeanderMain
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading work.NeanderMain_vlg_sample_tst
+# Loading work.NeanderMain_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Neander_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from Neander_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /NeanderMain_vlg_vec_tst File: Waveform1.vwf.vt
+# Simulation passed !
+# ** Note: $finish    : Waveform1.vwf.vt(2306)
+#    Time: 1 us  Iteration: 0  Instance: /NeanderMain_vlg_vec_tst/tb_out

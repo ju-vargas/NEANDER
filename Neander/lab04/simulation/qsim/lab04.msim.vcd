@@ -1,0 +1,344 @@
+$comment
+	File created using the following command:
+		vcd file lab04.msim.vcd -direction
+$end
+$date
+	Tue Dec 13 12:50:38 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module name_top_2_vlg_vec_tst $end
+$var reg 8 ! A [7:0] $end
+$var reg 8 " B [7:0] $end
+$var reg 1 # SELECT $end
+$var wire 1 $ OUT [7] $end
+$var wire 1 % OUT [6] $end
+$var wire 1 & OUT [5] $end
+$var wire 1 ' OUT [4] $end
+$var wire 1 ( OUT [3] $end
+$var wire 1 ) OUT [2] $end
+$var wire 1 * OUT [1] $end
+$var wire 1 + OUT [0] $end
+$var wire 1 , sampler $end
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 OUT[7]~output_o $end
+$var wire 1 4 OUT[6]~output_o $end
+$var wire 1 5 OUT[5]~output_o $end
+$var wire 1 6 OUT[4]~output_o $end
+$var wire 1 7 OUT[3]~output_o $end
+$var wire 1 8 OUT[2]~output_o $end
+$var wire 1 9 OUT[1]~output_o $end
+$var wire 1 : OUT[0]~output_o $end
+$var wire 1 ; SELECT~input_o $end
+$var wire 1 < A[7]~input_o $end
+$var wire 1 = B[7]~input_o $end
+$var wire 1 > inst|inst~0_combout $end
+$var wire 1 ? A[6]~input_o $end
+$var wire 1 @ B[6]~input_o $end
+$var wire 1 A inst3|inst~0_combout $end
+$var wire 1 B A[5]~input_o $end
+$var wire 1 C B[5]~input_o $end
+$var wire 1 D inst5|inst~0_combout $end
+$var wire 1 E A[4]~input_o $end
+$var wire 1 F B[4]~input_o $end
+$var wire 1 G inst6|inst~0_combout $end
+$var wire 1 H A[3]~input_o $end
+$var wire 1 I B[3]~input_o $end
+$var wire 1 J inst4|inst~0_combout $end
+$var wire 1 K A[2]~input_o $end
+$var wire 1 L B[2]~input_o $end
+$var wire 1 M inst2|inst~0_combout $end
+$var wire 1 N B[1]~input_o $end
+$var wire 1 O A[1]~input_o $end
+$var wire 1 P inst1|inst~0_combout $end
+$var wire 1 Q B[0]~input_o $end
+$var wire 1 R A[0]~input_o $end
+$var wire 1 S inst7|inst~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+1#
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x,
+0-
+1.
+x/
+10
+11
+12
+03
+04
+05
+06
+07
+08
+09
+0:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+$end
+#50000
+b1 !
+1R
+0,
+1S
+1:
+1+
+#100000
+b11 !
+b1 "
+b10 !
+1Q
+0R
+1O
+1,
+0S
+1P
+0:
+19
+0+
+1*
+#150000
+b11 !
+1R
+0,
+1S
+1:
+1+
+#200000
+b111 !
+b11 "
+b101 !
+b10 "
+b100 !
+0Q
+1N
+0R
+0O
+1K
+1,
+0S
+0P
+1M
+0:
+09
+18
+0+
+0*
+1)
+#250000
+b101 !
+1R
+0,
+1S
+1:
+1+
+#300000
+b111 !
+b11 "
+b110 !
+1Q
+0R
+1O
+1,
+0S
+1P
+0:
+19
+0+
+1*
+#350000
+b111 !
+1R
+0,
+1S
+1:
+1+
+#400000
+b1111 !
+b111 "
+b1011 !
+b101 "
+b1001 !
+b100 "
+b1000 !
+0Q
+0N
+1L
+0R
+0O
+0K
+1H
+1,
+0S
+0P
+0M
+1J
+0:
+09
+08
+17
+0+
+0*
+0)
+1(
+#450000
+b1001 !
+1R
+0,
+1S
+1:
+1+
+#500000
+0#
+b1011 !
+b101 "
+b1010 !
+0;
+1Q
+0R
+1O
+1,
+1M
+0J
+18
+07
+1)
+0(
+#550000
+b1011 !
+1R
+0,
+#600000
+b1111 !
+b111 "
+b1101 !
+b110 "
+b1100 !
+0Q
+1N
+0R
+0O
+1K
+1,
+0S
+1P
+0:
+19
+0+
+1*
+#650000
+b1101 !
+1R
+0,
+#700000
+b1111 !
+b111 "
+b1110 !
+1Q
+0R
+1O
+1,
+1S
+1:
+1+
+#750000
+b1111 !
+1R
+0,
+#800000
+b11111 !
+b1111 "
+b10111 !
+b1011 "
+b10011 !
+b1001 "
+b10001 !
+b1000 "
+b10000 !
+0Q
+0N
+0L
+1I
+0R
+0O
+0K
+0H
+1E
+1,
+0S
+0P
+0M
+1J
+0:
+09
+08
+17
+0+
+0*
+0)
+1(
+#850000
+b10001 !
+1R
+0,
+#900000
+b10011 !
+b1001 "
+b10010 !
+1Q
+0R
+1O
+1,
+1S
+1:
+1+
+#950000
+b10011 !
+1R
+0,
+#1000000

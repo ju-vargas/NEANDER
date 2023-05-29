@@ -1,0 +1,873 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/17/2023 22:22:07"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    uctop
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module uctop_vlg_sample_tst(
+	ADD,
+	AND,
+	CLK,
+	HTL,
+	JMP,
+	JN,
+	JZ,
+	LDA,
+	N,
+	NOP,
+	NOT,
+	OR,
+	STA,
+	Z,
+	sampler_tx
+);
+input  ADD;
+input  AND;
+input  CLK;
+input  HTL;
+input  JMP;
+input  JN;
+input  JZ;
+input  LDA;
+input  N;
+input  NOP;
+input  NOT;
+input  OR;
+input  STA;
+input  Z;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(ADD or AND or CLK or HTL or JMP or JN or JZ or LDA or N or NOP or NOT or OR or STA or Z)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module uctop_vlg_check_tst (
+	ACcarga,
+	cargaRI,
+	incPC,
+	NZcarga,
+	out3333,
+	PCcarga,
+	Q0,
+	Q1,
+	Q2,
+	RDMcarga,
+	read,
+	REMcarga,
+	SEL,
+	UALadd,
+	UALand,
+	UALnot,
+	UALor,
+	UALy,
+	write,
+	sampler_rx
+);
+input  ACcarga;
+input  cargaRI;
+input  incPC;
+input  NZcarga;
+input  out3333;
+input  PCcarga;
+input  Q0;
+input  Q1;
+input  Q2;
+input  RDMcarga;
+input  read;
+input  REMcarga;
+input  SEL;
+input  UALadd;
+input  UALand;
+input  UALnot;
+input  UALor;
+input  UALy;
+input  write;
+input sampler_rx;
+
+reg  ACcarga_expected;
+reg  cargaRI_expected;
+reg  incPC_expected;
+reg  NZcarga_expected;
+reg  out3333_expected;
+reg  PCcarga_expected;
+reg  Q0_expected;
+reg  Q1_expected;
+reg  Q2_expected;
+reg  RDMcarga_expected;
+reg  read_expected;
+reg  REMcarga_expected;
+reg  SEL_expected;
+reg  UALadd_expected;
+reg  UALand_expected;
+reg  UALnot_expected;
+reg  UALor_expected;
+reg  UALy_expected;
+reg  write_expected;
+
+reg  ACcarga_prev;
+reg  cargaRI_prev;
+reg  incPC_prev;
+reg  NZcarga_prev;
+reg  out3333_prev;
+reg  PCcarga_prev;
+reg  Q0_prev;
+reg  Q1_prev;
+reg  Q2_prev;
+reg  RDMcarga_prev;
+reg  read_prev;
+reg  REMcarga_prev;
+reg  SEL_prev;
+reg  UALadd_prev;
+reg  UALand_prev;
+reg  UALnot_prev;
+reg  UALor_prev;
+reg  UALy_prev;
+reg  write_prev;
+
+reg  ACcarga_expected_prev;
+reg  cargaRI_expected_prev;
+reg  incPC_expected_prev;
+reg  NZcarga_expected_prev;
+reg  out3333_expected_prev;
+reg  PCcarga_expected_prev;
+reg  Q0_expected_prev;
+reg  Q1_expected_prev;
+reg  Q2_expected_prev;
+reg  RDMcarga_expected_prev;
+reg  read_expected_prev;
+reg  REMcarga_expected_prev;
+reg  SEL_expected_prev;
+reg  UALadd_expected_prev;
+reg  UALand_expected_prev;
+reg  UALnot_expected_prev;
+reg  UALor_expected_prev;
+reg  UALy_expected_prev;
+reg  write_expected_prev;
+
+reg  last_ACcarga_exp;
+reg  last_cargaRI_exp;
+reg  last_incPC_exp;
+reg  last_NZcarga_exp;
+reg  last_out3333_exp;
+reg  last_PCcarga_exp;
+reg  last_Q0_exp;
+reg  last_Q1_exp;
+reg  last_Q2_exp;
+reg  last_RDMcarga_exp;
+reg  last_read_exp;
+reg  last_REMcarga_exp;
+reg  last_SEL_exp;
+reg  last_UALadd_exp;
+reg  last_UALand_exp;
+reg  last_UALnot_exp;
+reg  last_UALor_exp;
+reg  last_UALy_exp;
+reg  last_write_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:19] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 19'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	ACcarga_prev = ACcarga;
+	cargaRI_prev = cargaRI;
+	incPC_prev = incPC;
+	NZcarga_prev = NZcarga;
+	out3333_prev = out3333;
+	PCcarga_prev = PCcarga;
+	Q0_prev = Q0;
+	Q1_prev = Q1;
+	Q2_prev = Q2;
+	RDMcarga_prev = RDMcarga;
+	read_prev = read;
+	REMcarga_prev = REMcarga;
+	SEL_prev = SEL;
+	UALadd_prev = UALadd;
+	UALand_prev = UALand;
+	UALnot_prev = UALnot;
+	UALor_prev = UALor;
+	UALy_prev = UALy;
+	write_prev = write;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	ACcarga_expected_prev = ACcarga_expected;
+	cargaRI_expected_prev = cargaRI_expected;
+	incPC_expected_prev = incPC_expected;
+	NZcarga_expected_prev = NZcarga_expected;
+	out3333_expected_prev = out3333_expected;
+	PCcarga_expected_prev = PCcarga_expected;
+	Q0_expected_prev = Q0_expected;
+	Q1_expected_prev = Q1_expected;
+	Q2_expected_prev = Q2_expected;
+	RDMcarga_expected_prev = RDMcarga_expected;
+	read_expected_prev = read_expected;
+	REMcarga_expected_prev = REMcarga_expected;
+	SEL_expected_prev = SEL_expected;
+	UALadd_expected_prev = UALadd_expected;
+	UALand_expected_prev = UALand_expected;
+	UALnot_expected_prev = UALnot_expected;
+	UALor_expected_prev = UALor_expected;
+	UALy_expected_prev = UALy_expected;
+	write_expected_prev = write_expected;
+end
+
+
+
+// expected Q2
+initial
+begin
+	Q2_expected = 1'bX;
+end 
+
+// expected Q1
+initial
+begin
+	Q1_expected = 1'bX;
+end 
+
+// expected Q0
+initial
+begin
+	Q0_expected = 1'bX;
+end 
+
+// expected ACcarga
+initial
+begin
+	ACcarga_expected = 1'bX;
+end 
+
+// expected cargaRI
+initial
+begin
+	cargaRI_expected = 1'bX;
+end 
+
+// expected incPC
+initial
+begin
+	incPC_expected = 1'bX;
+end 
+
+// expected NZcarga
+initial
+begin
+	NZcarga_expected = 1'bX;
+end 
+
+// expected PCcarga
+initial
+begin
+	PCcarga_expected = 1'bX;
+end 
+
+// expected RDMcarga
+initial
+begin
+	RDMcarga_expected = 1'bX;
+end 
+
+// expected read
+initial
+begin
+	read_expected = 1'bX;
+end 
+
+// expected REMcarga
+initial
+begin
+	REMcarga_expected = 1'bX;
+end 
+
+// expected SEL
+initial
+begin
+	SEL_expected = 1'bX;
+end 
+
+// expected UALadd
+initial
+begin
+	UALadd_expected = 1'bX;
+end 
+
+// expected UALand
+initial
+begin
+	UALand_expected = 1'bX;
+end 
+
+// expected UALnot
+initial
+begin
+	UALnot_expected = 1'bX;
+end 
+
+// expected UALor
+initial
+begin
+	UALor_expected = 1'bX;
+end 
+
+// expected UALy
+initial
+begin
+	UALy_expected = 1'bX;
+end 
+
+// expected write
+initial
+begin
+	write_expected = 1'bX;
+end 
+
+// expected out3333
+initial
+begin
+	out3333_expected = 1'bX;
+end 
+// generate trigger
+always @(ACcarga_expected or ACcarga or cargaRI_expected or cargaRI or incPC_expected or incPC or NZcarga_expected or NZcarga or out3333_expected or out3333 or PCcarga_expected or PCcarga or Q0_expected or Q0 or Q1_expected or Q1 or Q2_expected or Q2 or RDMcarga_expected or RDMcarga or read_expected or read or REMcarga_expected or REMcarga or SEL_expected or SEL or UALadd_expected or UALadd or UALand_expected or UALand or UALnot_expected or UALnot or UALor_expected or UALor or UALy_expected or UALy or write_expected or write)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected ACcarga = %b | expected cargaRI = %b | expected incPC = %b | expected NZcarga = %b | expected out3333 = %b | expected PCcarga = %b | expected Q0 = %b | expected Q1 = %b | expected Q2 = %b | expected RDMcarga = %b | expected read = %b | expected REMcarga = %b | expected SEL = %b | expected UALadd = %b | expected UALand = %b | expected UALnot = %b | expected UALor = %b | expected UALy = %b | expected write = %b | ",ACcarga_expected_prev,cargaRI_expected_prev,incPC_expected_prev,NZcarga_expected_prev,out3333_expected_prev,PCcarga_expected_prev,Q0_expected_prev,Q1_expected_prev,Q2_expected_prev,RDMcarga_expected_prev,read_expected_prev,REMcarga_expected_prev,SEL_expected_prev,UALadd_expected_prev,UALand_expected_prev,UALnot_expected_prev,UALor_expected_prev,UALy_expected_prev,write_expected_prev);
+	$display("| real ACcarga = %b | real cargaRI = %b | real incPC = %b | real NZcarga = %b | real out3333 = %b | real PCcarga = %b | real Q0 = %b | real Q1 = %b | real Q2 = %b | real RDMcarga = %b | real read = %b | real REMcarga = %b | real SEL = %b | real UALadd = %b | real UALand = %b | real UALnot = %b | real UALor = %b | real UALy = %b | real write = %b | ",ACcarga_prev,cargaRI_prev,incPC_prev,NZcarga_prev,out3333_prev,PCcarga_prev,Q0_prev,Q1_prev,Q2_prev,RDMcarga_prev,read_prev,REMcarga_prev,SEL_prev,UALadd_prev,UALand_prev,UALnot_prev,UALor_prev,UALy_prev,write_prev);
+`endif
+	if (
+		( ACcarga_expected_prev !== 1'bx ) && ( ACcarga_prev !== ACcarga_expected_prev )
+		&& ((ACcarga_expected_prev !== last_ACcarga_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ACcarga :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ACcarga_expected_prev);
+		$display ("     Real value = %b", ACcarga_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_ACcarga_exp = ACcarga_expected_prev;
+	end
+	if (
+		( cargaRI_expected_prev !== 1'bx ) && ( cargaRI_prev !== cargaRI_expected_prev )
+		&& ((cargaRI_expected_prev !== last_cargaRI_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cargaRI :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cargaRI_expected_prev);
+		$display ("     Real value = %b", cargaRI_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_cargaRI_exp = cargaRI_expected_prev;
+	end
+	if (
+		( incPC_expected_prev !== 1'bx ) && ( incPC_prev !== incPC_expected_prev )
+		&& ((incPC_expected_prev !== last_incPC_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port incPC :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", incPC_expected_prev);
+		$display ("     Real value = %b", incPC_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_incPC_exp = incPC_expected_prev;
+	end
+	if (
+		( NZcarga_expected_prev !== 1'bx ) && ( NZcarga_prev !== NZcarga_expected_prev )
+		&& ((NZcarga_expected_prev !== last_NZcarga_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port NZcarga :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", NZcarga_expected_prev);
+		$display ("     Real value = %b", NZcarga_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_NZcarga_exp = NZcarga_expected_prev;
+	end
+	if (
+		( out3333_expected_prev !== 1'bx ) && ( out3333_prev !== out3333_expected_prev )
+		&& ((out3333_expected_prev !== last_out3333_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out3333 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out3333_expected_prev);
+		$display ("     Real value = %b", out3333_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_out3333_exp = out3333_expected_prev;
+	end
+	if (
+		( PCcarga_expected_prev !== 1'bx ) && ( PCcarga_prev !== PCcarga_expected_prev )
+		&& ((PCcarga_expected_prev !== last_PCcarga_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PCcarga :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PCcarga_expected_prev);
+		$display ("     Real value = %b", PCcarga_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_PCcarga_exp = PCcarga_expected_prev;
+	end
+	if (
+		( Q0_expected_prev !== 1'bx ) && ( Q0_prev !== Q0_expected_prev )
+		&& ((Q0_expected_prev !== last_Q0_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q0_expected_prev);
+		$display ("     Real value = %b", Q0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_Q0_exp = Q0_expected_prev;
+	end
+	if (
+		( Q1_expected_prev !== 1'bx ) && ( Q1_prev !== Q1_expected_prev )
+		&& ((Q1_expected_prev !== last_Q1_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q1_expected_prev);
+		$display ("     Real value = %b", Q1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_Q1_exp = Q1_expected_prev;
+	end
+	if (
+		( Q2_expected_prev !== 1'bx ) && ( Q2_prev !== Q2_expected_prev )
+		&& ((Q2_expected_prev !== last_Q2_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q2_expected_prev);
+		$display ("     Real value = %b", Q2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_Q2_exp = Q2_expected_prev;
+	end
+	if (
+		( RDMcarga_expected_prev !== 1'bx ) && ( RDMcarga_prev !== RDMcarga_expected_prev )
+		&& ((RDMcarga_expected_prev !== last_RDMcarga_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port RDMcarga :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", RDMcarga_expected_prev);
+		$display ("     Real value = %b", RDMcarga_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_RDMcarga_exp = RDMcarga_expected_prev;
+	end
+	if (
+		( read_expected_prev !== 1'bx ) && ( read_prev !== read_expected_prev )
+		&& ((read_expected_prev !== last_read_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port read :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", read_expected_prev);
+		$display ("     Real value = %b", read_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_read_exp = read_expected_prev;
+	end
+	if (
+		( REMcarga_expected_prev !== 1'bx ) && ( REMcarga_prev !== REMcarga_expected_prev )
+		&& ((REMcarga_expected_prev !== last_REMcarga_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REMcarga :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REMcarga_expected_prev);
+		$display ("     Real value = %b", REMcarga_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_REMcarga_exp = REMcarga_expected_prev;
+	end
+	if (
+		( SEL_expected_prev !== 1'bx ) && ( SEL_prev !== SEL_expected_prev )
+		&& ((SEL_expected_prev !== last_SEL_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_SEL_exp = SEL_expected_prev;
+	end
+	if (
+		( UALadd_expected_prev !== 1'bx ) && ( UALadd_prev !== UALadd_expected_prev )
+		&& ((UALadd_expected_prev !== last_UALadd_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port UALadd :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", UALadd_expected_prev);
+		$display ("     Real value = %b", UALadd_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_UALadd_exp = UALadd_expected_prev;
+	end
+	if (
+		( UALand_expected_prev !== 1'bx ) && ( UALand_prev !== UALand_expected_prev )
+		&& ((UALand_expected_prev !== last_UALand_exp) ||
+			on_first_change[15])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port UALand :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", UALand_expected_prev);
+		$display ("     Real value = %b", UALand_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[15] = 1'b0;
+		last_UALand_exp = UALand_expected_prev;
+	end
+	if (
+		( UALnot_expected_prev !== 1'bx ) && ( UALnot_prev !== UALnot_expected_prev )
+		&& ((UALnot_expected_prev !== last_UALnot_exp) ||
+			on_first_change[16])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port UALnot :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", UALnot_expected_prev);
+		$display ("     Real value = %b", UALnot_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[16] = 1'b0;
+		last_UALnot_exp = UALnot_expected_prev;
+	end
+	if (
+		( UALor_expected_prev !== 1'bx ) && ( UALor_prev !== UALor_expected_prev )
+		&& ((UALor_expected_prev !== last_UALor_exp) ||
+			on_first_change[17])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port UALor :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", UALor_expected_prev);
+		$display ("     Real value = %b", UALor_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[17] = 1'b0;
+		last_UALor_exp = UALor_expected_prev;
+	end
+	if (
+		( UALy_expected_prev !== 1'bx ) && ( UALy_prev !== UALy_expected_prev )
+		&& ((UALy_expected_prev !== last_UALy_exp) ||
+			on_first_change[18])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port UALy :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", UALy_expected_prev);
+		$display ("     Real value = %b", UALy_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[18] = 1'b0;
+		last_UALy_exp = UALy_expected_prev;
+	end
+	if (
+		( write_expected_prev !== 1'bx ) && ( write_prev !== write_expected_prev )
+		&& ((write_expected_prev !== last_write_exp) ||
+			on_first_change[19])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port write :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", write_expected_prev);
+		$display ("     Real value = %b", write_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[19] = 1'b0;
+		last_write_exp = write_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module uctop_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg ADD;
+reg AND;
+reg CLK;
+reg HTL;
+reg JMP;
+reg JN;
+reg JZ;
+reg LDA;
+reg N;
+reg NOP;
+reg NOT;
+reg OR;
+reg STA;
+reg Z;
+// wires                                               
+wire ACcarga;
+wire cargaRI;
+wire incPC;
+wire NZcarga;
+wire out3333;
+wire PCcarga;
+wire Q0;
+wire Q1;
+wire Q2;
+wire RDMcarga;
+wire read;
+wire REMcarga;
+wire SEL;
+wire UALadd;
+wire UALand;
+wire UALnot;
+wire UALor;
+wire UALy;
+wire write;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+uctop i1 (
+// port map - connection between master ports and signals/registers   
+	.ACcarga(ACcarga),
+	.ADD(ADD),
+	.\AND (AND),
+	.cargaRI(cargaRI),
+	.CLK(CLK),
+	.HTL(HTL),
+	.incPC(incPC),
+	.JMP(JMP),
+	.JN(JN),
+	.JZ(JZ),
+	.LDA(LDA),
+	.N(N),
+	.NOP(NOP),
+	.\NOT (NOT),
+	.NZcarga(NZcarga),
+	.\OR (OR),
+	.out3333(out3333),
+	.PCcarga(PCcarga),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.RDMcarga(RDMcarga),
+	.read(read),
+	.REMcarga(REMcarga),
+	.SEL(SEL),
+	.STA(STA),
+	.UALadd(UALadd),
+	.UALand(UALand),
+	.UALnot(UALnot),
+	.UALor(UALor),
+	.UALy(UALy),
+	.write(write),
+	.Z(Z)
+);
+
+// CLK
+initial
+begin
+	repeat(12)
+	begin
+		CLK = 1'b0;
+		CLK = #40000 1'b1;
+		# 40000;
+	end
+	CLK = 1'b0;
+end 
+
+// ADD
+initial
+begin
+	ADD = 1'b0;
+end 
+
+// AND
+initial
+begin
+	AND = 1'b0;
+end 
+
+// HTL
+initial
+begin
+	HTL = 1'b0;
+end 
+
+// JMP
+initial
+begin
+	JMP = 1'b0;
+end 
+
+// JN
+initial
+begin
+	JN = 1'b0;
+end 
+
+// JZ
+initial
+begin
+	JZ = 1'b0;
+end 
+
+// LDA
+initial
+begin
+	LDA = 1'b1;
+end 
+
+// N
+initial
+begin
+	N = 1'b0;
+end 
+
+// NOP
+initial
+begin
+	NOP = 1'b0;
+end 
+
+// NOT
+initial
+begin
+	NOT = 1'b0;
+end 
+
+// OR
+initial
+begin
+	OR = 1'b0;
+end 
+
+// STA
+initial
+begin
+	STA = 1'b0;
+end 
+
+// Z
+initial
+begin
+	Z = 1'b0;
+end 
+
+uctop_vlg_sample_tst tb_sample (
+	.ADD(ADD),
+	.AND(AND),
+	.CLK(CLK),
+	.HTL(HTL),
+	.JMP(JMP),
+	.JN(JN),
+	.JZ(JZ),
+	.LDA(LDA),
+	.N(N),
+	.NOP(NOP),
+	.NOT(NOT),
+	.OR(OR),
+	.STA(STA),
+	.Z(Z),
+	.sampler_tx(sampler)
+);
+
+uctop_vlg_check_tst tb_out(
+	.ACcarga(ACcarga),
+	.cargaRI(cargaRI),
+	.incPC(incPC),
+	.NZcarga(NZcarga),
+	.out3333(out3333),
+	.PCcarga(PCcarga),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.RDMcarga(RDMcarga),
+	.read(read),
+	.REMcarga(REMcarga),
+	.SEL(SEL),
+	.UALadd(UALadd),
+	.UALand(UALand),
+	.UALnot(UALnot),
+	.UALor(UALor),
+	.UALy(UALy),
+	.write(write),
+	.sampler_rx(sampler)
+);
+endmodule
+

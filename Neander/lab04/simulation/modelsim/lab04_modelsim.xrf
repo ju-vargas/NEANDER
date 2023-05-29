@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/Desktop/lab04/name_top.bdf
+source_file = 1, C:/Users/aluno/Desktop/lab04/db/lab04.cbx.xml
+design_name = name_top
+instance = comp, \out~output\, out~output, name_top, 1
+instance = comp, \A~input\, A~input, name_top, 1
+instance = comp, \Sel~input\, Sel~input, name_top, 1
+instance = comp, \B~input\, B~input, name_top, 1
+instance = comp, \inst~0\, inst~0, name_top, 1
